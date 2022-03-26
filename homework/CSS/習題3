@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      button {
+      	font-size: 30px;
+		padding: 6px 16px;
+        background-color: CornflowerBlue;
+        color: white;
+        border: 0px black solid;
+        border-radius: 5px;
+        font-family: Impact;
+      }
+      .Ch1{
+      	background-color:PowderBlue;
+        text-shadow: 0 0 2px black;
+      }
+      .Ch2{
+      	background-color:LightBlue;
+        text-shadow: 0 0 2px black;
+      }
+      .Ch3{
+      	background-color:LightSteelBlue;
+        text-shadow: 0 0 2px black;
+      }
+      .Ch4{
+        background-color:LightSkyBlue;
+        text-shadow: 0 0 2px black;
+      }
+      .Ch5{
+        background-color:SkyBlue;
+        text-shadow: 0 0 2px black;
+      }
+    </style>
+  </head>
+  <body>
+  	<button class="Ch1">Ch1</button>
+    <button class="Ch2">Ch2</button>
+    <button class="Ch3">Ch3</button>
+    <button class="Ch4">Ch4</button>
+    <button class="Ch5">Ch5</button>
+  </body>
+</html>
