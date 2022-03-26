@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style> 
+            div {
+              margin: auto;
+              width:100%;
+              text-align:center;
+            }
+            h1{
+              font-family:monospace;
+            }
+            h5 {
+              margin: 20px;
+              color: gray;
+              text-align:left;
+              padding: 8px;
+              font-family:monospace;
+            }
+            h5:hover {
+              color: black;
+            }
+            .submit {
+              color: white;
+              background: Salmon;
+              width: 100px;
+              height: 50px;
+              padding: 10px 10px;
+              border-radius: 50px;
+              border: 0px;
+              font-size: 18px;
+              font-family: monospace;
+            }
+            .submit:hover {
+              background: Crimson;
+            }
+            input {
+              width: 300px;
+              padding: 10px;
+              border: none;
+              border: solid 1px #ccc;
+              border-radius: 20px;
+              font-family:monospace;
+            }
+            input2{
+              width: 100px;
+            }
+            ::placeholder {
+              color: gray;
+            }
+            body {
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+            }
+            .login {
+              width: 400px;
+              height: 515px;
+              margin: auto;
+              padding: 50px;
+              background-color: snow;
+              border-radius: 20px;
+              border: 5px solid white;
+              box-shadow: 15px 12px 20px gray;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="login">
+        <div>
+            <h1>Signup</h1>
+            <p><input type="text" name="name" placeholder="Name"/></p>
+            <p><input type="text" name="phone" placeholder="Phone"/></p>
+            <p><input type="text" name="email" placeholder="Email"/></p>
+            <p><input type="password" name="password" placeholder="Password"/></p>
+            <p><input type="password" name="password2" placeholder="Re-enter password again"/></p>
+            <h5>Already have an account ?</h5>
+            <p><input2 type="checkbox">I agree to the following <a href="https://policies.google.com/terms?hl=zh-TW">terms</a></p>
+            <button class="submit">Submit</button>
+        </div>
+        </form>
+    </body>
+</html>
