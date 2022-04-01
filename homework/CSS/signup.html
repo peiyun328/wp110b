@@ -3,27 +3,25 @@
         <style> 
             div {
               margin: auto;
-              width:100%;
-              text-align:center;
+              width: 100%;
+              text-align: center;
             }
             h1{
-              font-family:monospace;
+              font-family: monospace;
             }
             h5 {
               margin: 20px;
-              color: gray;
-              text-align:left;
+              color: black;
+              text-align: center;
               padding: 8px;
-              font-family:monospace;
+              font-family: monospace;
             }
             h5:hover {
-              color: black;
+              color: LightYellow;
             }
             .submit {
-              color: white;
-              background: Salmon;
-              width: 100px;
-              height: 50px;
+              color: black;
+              background: MistyRose;
               padding: 10px 10px;
               border-radius: 50px;
               border: 0px;
@@ -31,21 +29,24 @@
               font-family: monospace;
             }
             .submit:hover {
-              background: Crimson;
+              height: 50px;
+              border-radius: 30px;
+              margin: 2px;
+              padding: 8px 15px;
+
             }
             input {
               width: 300px;
               padding: 10px;
               border: none;
-              border: solid 1px #ccc;
+              border: 0px;
+              background-color: LightYellow;
               border-radius: 20px;
-              font-family:monospace;
+              font-family: monospace;
             }
-            input2{
-              width: 100px;
-            }
+            
             ::placeholder {
-              color: gray;
+              color: black;
             }
             body {
               box-sizing: border-box;
@@ -53,28 +54,26 @@
               align-items: center;
             }
             .login {
+              padding: 25px;
               width: 400px;
-              height: 515px;
+              height: 390px;
               margin: auto;
-              padding: 50px;
-              background-color: snow;
+              background-color: LightSalmon;
               border-radius: 20px;
-              border: 5px solid white;
-              box-shadow: 15px 12px 20px gray;
+              border: 2px solid white;
+              box-shadow: -15px 20px 5px silver;
             }
         </style>
     </head>
     <body>
         <form class="login">
         <div>
-            <h1>Signup</h1>
-            <p><input type="text" name="name" placeholder="Name"/></p>
-            <p><input type="text" name="phone" placeholder="Phone"/></p>
-            <p><input type="text" name="email" placeholder="Email"/></p>
-            <p><input type="password" name="password" placeholder="Password"/></p>
-            <p><input type="password" name="password2" placeholder="Re-enter password again"/></p>
+            <h1>- Signup -</h1>
+            <p><input type="text" name="name" placeholder="User Name"/></p>
+            <p><input type="text" name="phone" placeholder="Phone (0912-345678)"/></p>
+            <p><input type="text" name="email" placeholder="Email (****@gmail.com)"/></p>
+            <p><input type="password" name="password" placeholder="Password (8~12,至少包含大小寫英文）"/></p>
             <h5>Already have an account ?</h5>
-            <p><input2 type="checkbox">I agree to the following <a href="https://policies.google.com/terms?hl=zh-TW">terms</a></p>
             <button class="submit">Submit</button>
         </div>
         </form>
