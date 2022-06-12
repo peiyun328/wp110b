@@ -47,6 +47,7 @@ class Vector {
       return this.a.toString()
     }
 
+    //點內積
     dot()
     {
         let d = 0;
