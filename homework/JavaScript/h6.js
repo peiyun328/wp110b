@@ -51,7 +51,7 @@ class Vector {
     dot()
     {
         let d = 0;
-        for(let i = 0;i < p1.a.length ; i++)
+        for(let i = 0;i < this.a.length ; i++)
         {
             d += p1.a[i] * p2.a[i];
         }
