@@ -23,9 +23,8 @@ class Ratio
 }
 
 var rat1 = new Ratio(1,3), rat2 = new Ratio(2,4)
-var rat3 = rat1.add(rat2) ,rat4 = rat1.sub(rat2)
 
 console.log("rat1.toString() ->", rat1.toString())
 console.log("rat2.toString() ->", rat2.toString())
-console.log("rat1.add(rat2) ->", rat3.toString())
-console.log("rat1.sub(rat2) ->", rat4.toString())
+console.log("rat1.add(rat2) ->", rat1.add(rat2).toString())
+console.log("rat1.sub(rat2) ->", rat1.sub(rat2).toString())
