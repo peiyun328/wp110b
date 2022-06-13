@@ -1,0 +1,31 @@
+//擴充上一題，加入 add, sub 兩個函數
+class Ratio
+{
+    constructor(x, y)
+    {
+        this.x = x
+        this.y = y
+    }
+    toString()
+    {
+        return this.x + "/" + this.y
+    }
+    neg() { // 點變成負的
+        return new Ratio(-this.x, -this.y)
+      }
+    add(rat2) { //兩點相加
+        return new Ratio(rat1.x+rat2.x,rat1.y+rat2.y)
+    }
+    sub(rat2) { //負的p2 p1+(-p2)
+        return this.add(rat2.neg()) 
+    }
+
+}
+
+var rat1 = new Ratio(1,3), rat2 = new Ratio(2,4)
+var rat3 = rat1.add(rat2) ,rat4 = rat1.sub(rat2)
+
+console.log("rat1.toString() ->", rat1.toString())
+console.log("rat2.toString() ->", rat2.toString())
+console.log("rat1.add(rat2) ->", rat3.toString())
+console.log("rat1.sub(rat2) ->", rat4.toString())
