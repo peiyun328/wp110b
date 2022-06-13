@@ -3,14 +3,14 @@ class Ratio
 {
     constructor(x, y)
     {
-        this.x = x;
-        this.y = y;
+        this.x = x
+        this.y = y
     }
     toString()
     {
-        return this.x + "/" + this.y;
+        return this.x + "/" + this.y
     }
 }
 
-var rat = new Ratio(1,3);
-console.log(rat.toString());
+var rat = new Ratio(1,3)
+console.log(rat.toString())
