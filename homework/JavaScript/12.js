@@ -10,13 +10,13 @@ class Ratio
     {
         return this.x + "/" + this.y
     }
-    neg() { // 點變成負的
+    neg() {
         return new Ratio(-this.x, -this.y)
       }
-    add(rat2) { //兩點相加
+    add(rat2) {
         return new Ratio(rat1.x+rat2.x,rat1.y+rat2.y)
     }
-    sub(rat2) { //負的p2 p1+(-p2)
+    sub(rat2) {
         return this.add(rat2.neg()) 
     }
 
