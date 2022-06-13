@@ -12,7 +12,7 @@ class Ratio
     }
     neg() {
         return new Ratio(-this.x, -this.y)
-      }
+    }
     add(rat2) {
         return new Ratio(rat1.x+rat2.x, rat1.y+rat2.y)
     }
