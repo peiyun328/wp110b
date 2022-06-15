@@ -16,8 +16,6 @@ function submitheck() {
   var data = JSON.stringify(account)
   sub.send(data)
   sub.onload = function () {
-    var callbackData = JSON.parse(sub.responseText)
-    var str = callbackData.message
     alert("提交成功")
   }
 }
