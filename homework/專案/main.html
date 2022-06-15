@@ -411,7 +411,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="contact.js"></script>
+
+<script>
+var submitBtn = document.querySelector('.submit')
+
+//提交函式
+function submitheck() {
+  var nameStr = document.querySelector('.name').value
+  var emailStr = document.querySelector('.email').value
+  var phoneStr = document.querySelector('.phone').value
+  var account = {} //輸入的資料，填入空物件
+  account.name = nameStr //填入的姓名
+  account.email = emailStr //填入的 email
+  account.phone = phoneStr //填入的密碼
+
+  var sub = new XMLHttpRequest()
+  sub.open('post', 'https://hexschool-tutorial.herokuapp.com/api/signup', true)
+  sub.setRequestHeader('Content-type', 'application/json')
+  var data = JSON.stringify(account)
+  sub.send(data)
+  sub.onload = function () {
+      if(account.email!='' && account.name!='' && account.phone!=''){
+        alert("提交成功")
+      }
+      else{
+          alert("請完成空白處")
+      }
+  }
+}
+submitBtn.addEventListener('click', submitheck, false)
+</script>
 
 </body>
 </html>
