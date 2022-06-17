@@ -1,12 +1,16 @@
-內容是參考線上的：
+內容程式碼是參考：
 
 https://codepen.io/PaiP/pen/NWPMvpR
 
 https://www.ugm.com.tw/modules/tad_book3/page.php?tbdsn=1729
 
-照片輪轉 https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel
+網頁最上面的照片輪轉參考：
 
-表單 https://codepen.io/hnzxewqw/pen/NWqXrEe 
+https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel
+
+footer的表單：
+
+https://codepen.io/hnzxewqw/pen/NWqXrEe 
 
 內容文字參考：
 
