@@ -1,7 +1,5 @@
 內容程式碼是參考：
 
-https://codepen.io/PaiP/pen/NWPMvpR
-
 https://www.ugm.com.tw/modules/tad_book3/page.php?tbdsn=1729
 
 網頁最上面的照片輪轉參考：可以按左右箭頭或是按下面三條橫線來查看封面圖片
