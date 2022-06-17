@@ -129,13 +129,13 @@
             <div class="card-columns">
                
               <div class="card">
-                <img class="card-img-top" src="https://cf.shopee.tw/file/b8db349eef5de4536ab2b69e94f2348c" alt="商品1" height="450">
+                <img class="card-img-top" src="https://api.openverse.engineering/v1/images/59083a89-333e-4f0a-ac0d-d427d9da70c0/thumb/" alt="商品1" height="450">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">黃金曼特寧<br>半磅$520</h4>
                 </div>
               </div>  
               <div class="card">
-                <img class="card-img-top" src="https://cf.shopee.tw/file/e85d4ec7267d11805239524905251e53" alt="商品2" height="450">
+                <img class="card-img-top" src=" https://api.openverse.engineering/v1/images/52e633ad-0ddb-416b-8116-932bd6cb53ad/thumb/" alt="商品2" height="450">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">哥倫比亞<br>半磅$340</h4>
                 </div>
@@ -147,13 +147,13 @@
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="https://img.jollybuy.com/S201018101448311/goods/160fed9306034609b2ac95aa2de2bec5_Q50.jpg" alt="商品4" height="450">
+                <img class="card-img-top" src=" https://api.openverse.engineering/v1/images/9e5050f4-36be-4ae8-b1e5-b9af8ca6ff64/thumb/" alt="商品4" height="450">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-0">肯亞精選小農<br>半磅$360</h4>
+                  <h4 class="card-title text-center mb-0">肯亞精選<br>半磅$360</h4>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="https://cf.shopee.tw/file/c1cdf680bc11816cd735eb6eb2a2de83" alt="商品5" height="450">
+                <img class="card-img-top" src="https://api.openverse.engineering/v1/images/bfb39c0f-409e-4cdc-bf1c-e040b2134ab9/thumb/" alt="商品5" height="450">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">莊園拿鐵<br>$100</h4>
                 </div>
@@ -185,13 +185,14 @@
                 </div>
               </div>   
               <div class="card">
-                <img class="card-img-top" src="https://i.imgur.com/0VgU3uf.jpg" alt="商品3" height="450">
+                <img class="card-img-top" src=" https://api.openverse.engineering/v1/images/28178092-c44d-4442-8039-8f740dca9af1/thumb/" alt="商品3" height="450">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">義式摩卡<br>$100</h4>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.18169-9/1910091_451103975079722_5781704749319076922_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9267fe&_nc_ohc=SonyFvYj6zAAX_mrgpk&_nc_ht=scontent.fkhh1-2.fna&oh=00_AT-5_4t6VMdKlQEzIsD8Ygv_UoiNjWFV9ZN8yTjbsZkd9A&oe=62CF55EB" alt="商品4" height="450">
+                <img class="card-img-top" src="https://api.openverse.engineering/v1/images/92a0c8ea-e544-4703-9bb2-15c1d0d0a24f/thumb/
+                " alt="商品4" height="450">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">焦糖瑪奇朵<br>$100</h4>
                 </div>
@@ -223,7 +224,7 @@
                 </div>
               </div>  
               <div class="card">
-                <img class="card-img-top" src="https://foodtracer.taipei.gov.tw/Backend/upload/product/54857699/54857699_70.jpg" alt="商品2" height="400">
+                <img class="card-img-top" src="https://api.openverse.engineering/v1/images/d0135c55-fe96-4622-903d-930e28147ab9/thumb/ " alt="商品2" height="400">
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">鮮奶茶<br>$60</h4>
                 </div>
@@ -411,36 +412,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-<script>
-var submitBtn = document.querySelector('.submit')
-
-//提交函式
-function submitheck() {
-  var nameStr = document.querySelector('.name').value
-  var emailStr = document.querySelector('.email').value
-  var phoneStr = document.querySelector('.phone').value
-  var account = {} //輸入的資料，填入空物件
-  account.name = nameStr //填入的姓名
-  account.email = emailStr //填入的 email
-  account.phone = phoneStr //填入的密碼
-
-  var sub = new XMLHttpRequest()
-  sub.open('post', 'https://hexschool-tutorial.herokuapp.com/api/signup', true)
-  sub.setRequestHeader('Content-type', 'application/json')
-  var data = JSON.stringify(account)
-  sub.send(data)
-  sub.onload = function () {
-      if(account.email!='' && account.name!='' && account.phone!=''){
-        alert("提交成功")
-      }
-      else{
-          alert("請完成空白處")
-      }
-  }
-}
-submitBtn.addEventListener('click', submitheck, false)
-</script>
+<script src="con.js"></script>
 
 </body>
 </html>
